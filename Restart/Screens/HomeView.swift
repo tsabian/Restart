@@ -10,7 +10,9 @@ import SwiftUI
 struct HomeView: View {
     // MARK: - Property
 
-    @AppStorage(onboardingStorageKey) var isOnboardingViewActive = false
+    @AppStorage(onboardingStorageKey)
+    var isOnboardingViewActive = false
+
     @State private var isAnimating = false
 
     // MARK: - Body

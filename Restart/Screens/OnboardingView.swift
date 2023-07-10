@@ -16,7 +16,8 @@ private let blurEffectDynamicValue = 5.0
 struct OnboardingView: View {
     // MARK: - Property
 
-    @AppStorage(onboardingStorageKey) var isOnboardingActive = true
+    @AppStorage(onboardingStorageKey)
+    var isOnboardingActive = true
 
     @State private var buttonWidth = UIScreen.main.bounds.width - zstackButtonWidth
     @State private var buttonOffset: CGFloat = .zero

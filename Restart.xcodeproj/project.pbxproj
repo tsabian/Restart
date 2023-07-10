@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52461A812A54877800D5487E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52461A802A54877800D5487E /* StoreKit.framework */; };
 		ED92288729D5BC480009565D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92288629D5BC480009565D /* OnboardingView.swift */; };
 		ED92288929D5BC880009565D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92288829D5BC880009565D /* HomeView.swift */; };
 		ED92288B29D5E00F0009565D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92288A29D5E00F0009565D /* AppConstants.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52461A802A54877800D5487E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ED92288629D5BC480009565D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		ED92288829D5BC880009565D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ED92288A29D5E00F0009565D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -32,7 +34,7 @@
 		ED92288F29D5E0AA0009565D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		ED92289529D6187F0009565D /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 		ED9DDEF829D7C0A200A3C11D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		EDBCFD8129D559E800D16F04 /* Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBCFD8129D559E800D16F04 /* BBreathing Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBreathing Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBCFD8429D559E800D16F04 /* RestartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartApp.swift; sourceTree = "<group>"; };
 		EDBCFD8629D559E800D16F04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDBCFD8829D559EA00D16F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,12 +49,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52461A812A54877800D5487E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529A421B2A546EC500243857 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52461A802A54877800D5487E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED92288C29D5E08C0009565D /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +80,14 @@
 				ED92288C29D5E08C0009565D /* Supporting */,
 				EDBCFD8329D559E800D16F04 /* Restart */,
 				EDBCFD8229D559E800D16F04 /* Products */,
+				529A421B2A546EC500243857 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EDBCFD8229D559E800D16F04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDBCFD8129D559E800D16F04 /* Restart.app */,
+				EDBCFD8129D559E800D16F04 /* BBreathing Time.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDBCFD8029D559E800D16F04 /* Restart */ = {
+		EDBCFD8029D559E800D16F04 /* BBreathing Time */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDBCFD8F29D559EA00D16F04 /* Build configuration list for PBXNativeTarget "Restart" */;
+			buildConfigurationList = EDBCFD8F29D559EA00D16F04 /* Build configuration list for PBXNativeTarget "BBreathing Time" */;
 			buildPhases = (
 				EDBCFD7D29D559E800D16F04 /* Sources */,
 				EDBCFD7E29D559E800D16F04 /* Frameworks */,
@@ -155,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = Restart;
+			name = "BBreathing Time";
 			productName = Restart;
-			productReference = EDBCFD8129D559E800D16F04 /* Restart.app */;
+			productReference = EDBCFD8129D559E800D16F04 /* BBreathing Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,6 +181,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Bitx Labs Ltda";
 				TargetAttributes = {
 					EDBCFD8029D559E800D16F04 = {
 						CreatedOnToolsVersion = 14.2;
@@ -188,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDBCFD8029D559E800D16F04 /* Restart */,
+				EDBCFD8029D559E800D16F04 /* BBreathing Time */,
 			);
 		};
 /* End PBXProject section */
@@ -376,15 +389,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Restart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BBreathing Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.bitxlabs.ios.Restart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.bitxlabs.app.ios.restart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -407,15 +423,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Restart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BBreathing Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.bitxlabs.ios.Restart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.bitxlabs.app.ios.restart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -438,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDBCFD8F29D559EA00D16F04 /* Build configuration list for PBXNativeTarget "Restart" */ = {
+		EDBCFD8F29D559EA00D16F04 /* Build configuration list for PBXNativeTarget "BBreathing Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDBCFD9029D559EA00D16F04 /* Debug */,
